@@ -1,5 +1,5 @@
 
-# Create Honeybee-Comb like Structure made-up of Regular Hexagons in Cormas.
+# Create Honey-Comb like Structure made-up of Regular Hexagons in Cormas.
 <div align="center">
   <img src="https://github.com/user-attachments/assets/587047a5-3452-42d0-9762-230253d85cac">
 </div>
