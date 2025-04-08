@@ -80,6 +80,6 @@ canvas open.
 ```
 ## Modifications
 
-**You can change color, number of rows columns, radius of hexagons, and border width & color.**
+**You can change color, number of rows columns, radius of hexagons, and border width & its color.**
 
 ## To be added more....
