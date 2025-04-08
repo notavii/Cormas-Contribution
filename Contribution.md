@@ -6,4 +6,4 @@
 
      
 ### Created Hexagonal Cells for visualization through Playground
-[Contribution guidelines for this project](main/README.md)
+[Click Here](README.md)
