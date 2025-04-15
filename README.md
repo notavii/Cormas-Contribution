@@ -10,4 +10,7 @@ Cormas is a platform for agent-based modelling and simulations implemented in Ph
 
 Cormas was originally developed by the Green research unit (today part of UMR SENS) based on the years of field experience. Cormas was specifically developed to support Companion Modelling (ComMod) - a participatory approach that involves stakeholders in every step of model development and exploration.
 
-Documentation and tutorials about Cormas are available on our website: https://cormas.org
+Documentation and tutorials about Cormas are available on this website: https://cormas.org
+<br>
+
+### My Contribution to Cormas and Pharo, [Click here](Contribution.md)
