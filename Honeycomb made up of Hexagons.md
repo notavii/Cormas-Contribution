@@ -24,12 +24,12 @@
 
 ```st
   | canvas points size rows cols q r x y gridWidth gridHeight offsetX offsetY |
-canvas := RSCanvas new. "Initialize the canvas"
+canvas := RSCanvas new. 
 
 
-size := 20. "Radius of each hexagon (distance from center to corner)"
-rows := 10. "Number of rows"
-cols := 10. "Number of columns"
+size := 20. 
+rows := 10. 
+cols := 10. 
 
 
 points := Array new: 6.
@@ -44,8 +44,8 @@ gridWidth := (cols * (size * (3 sqrt))) + (size * (3 sqrt) / 2).
 gridHeight := rows * (size * 1.5).
 
 
-offsetX := gridWidth / -2. "Negative because we need to move left from center"
-offsetY := gridHeight / -2. "Negative because we need to move up from center"
+offsetX := gridWidth / -2. 
+offsetY := gridHeight / -2. 
 
 
 0 to: rows - 1 do: [ :r | 
@@ -55,8 +55,8 @@ offsetY := gridHeight / -2. "Negative because we need to move up from center"
       
         hex := RSPolygon new.
         hex points: points copy.
-        hex color: Color green. "Fill color"
-        hex borderColor: Color black; borderWidth: 2. "Border color and width"
+        hex color: Color green. 
+        hex borderColor: Color black; borderWidth: 2. 
         
        
         cellX := size * (3 sqrt) * q.
