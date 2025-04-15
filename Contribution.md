@@ -8,6 +8,7 @@
 
 ## 2. Open Pull Request
   1) [Added Test for "Save data to CSV" method #811](https://github.com/cormas/cormas/pull/811)
+  2) [[Fixed] SpRoassalInspectorPresenter not loaded in Pharo 11 #812](https://github.com/cormas/cormas/pull/812)
      
 ## 3. Created Hexagonal Cells for visualization through Playground
   [Click Here to see the contribution](Honeycomb%20made%20up%20of%20Hexagons.md)
