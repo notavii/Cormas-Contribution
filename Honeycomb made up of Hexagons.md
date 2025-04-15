@@ -26,12 +26,12 @@
   | canvas points size rows cols q r x y gridWidth gridHeight offsetX offsetY |
 canvas := RSCanvas new. "Initialize the canvas"
 
-"Define hexagon size and grid dimensions"
+
 size := 20. "Radius of each hexagon (distance from center to corner)"
 rows := 10. "Number of rows"
 cols := 10. "Number of columns"
 
-"Define hexagon shape (6 vertices with 30° rotation for pointy-top)"
+
 points := Array new: 6.
 1 to: 6 do: [ :i |
     | angle |
@@ -39,33 +39,33 @@ points := Array new: 6.
     points at: i put: (size * ((angle + (30 degreesToRadians)) cos)) @ (size * ((angle + (30 degreesToRadians)) sin)).
 ].
 
-"Calculate grid dimensions to determine center offset"
+
 gridWidth := (cols * (size * (3 sqrt))) + (size * (3 sqrt) / 2).
 gridHeight := rows * (size * 1.5).
 
-"Calculate the offset to center the grid"
+
 offsetX := gridWidth / -2. "Negative because we need to move left from center"
 offsetY := gridHeight / -2. "Negative because we need to move up from center"
 
-"Generate staggered hexagonal grid using odd-r offset coordinates"
+
 0 to: rows - 1 do: [ :r | 
     0 to: cols - 1 do: [ :q | 
         | hex cellX cellY |
         
-        "Create the hexagon"
+      
         hex := RSPolygon new.
         hex points: points copy.
         hex color: Color green. "Fill color"
         hex borderColor: Color black; borderWidth: 2. "Border color and width"
         
-        "Calculate base position with staggered offset"
+       
         cellX := size * (3 sqrt) * q.
         cellY := size * (1.5 * r).
         
-        "Apply staggered effect for odd rows"
+        
         r odd ifTrue: [ cellX := cellX + (size * (3 sqrt) / 2) ].
         
-        "Apply centering offset"
+       
         cellX := cellX + offsetX.
         cellY := cellY + offsetY.
         
@@ -74,12 +74,12 @@ offsetY := gridHeight / -2. "Negative because we need to move up from center"
     ].
 ].
 
-"Display the canvas"
+
 canvas open.
 
 ```
-## Modifications
 
-**You can change color, number of rows columns, radius of hexagons, and border width & its color.**
+## Modifications
+You can change **color**, number of **rows, columns, radius** of hexagons, and **border width** & its **color**. 
 
 ## To be added more....
