@@ -9,6 +9,7 @@
 ## 2. Open Pull Request
   1) [Added Test for "Save data to CSV" method #811](https://github.com/cormas/cormas/pull/811)
   2) [[Fixed] SpRoassalInspectorPresenter not loaded in Pharo 11 #812](https://github.com/cormas/cormas/pull/812)
+  3) [ [Fixed] : "Create" button allows to choose agent is being created #818](https://github.com/cormas/cormas/pull/818)
      
 ## 3. Created Package Cormas-HexGrid for Flat-top Hexagons
  [ Click Here to see the Repository ](https://github.com/notavii/Flat-top-hexagons-cormas)
